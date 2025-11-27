@@ -2,15 +2,15 @@ using System;
 
 namespace Ucu.Poo.Shapes
 {
-    public class Square : IFiguret
+    public class Circule : IFiguret
     {
-        public double Side { get; private set; }
+        public double Radius { get; private set; }
 
         public double Perimeter
         {
             get
             {
-                return this.Side * 4;
+                return 2 * Math.PI * this.Radius;
             }
         }
 
@@ -18,18 +18,18 @@ namespace Ucu.Poo.Shapes
         {
             get
             {
-                return this.Side * this.Side;
+                return Math.PI * this.Radius * this.Radius;
             }
         }
         public string Type
         {
-            get { return "square"; }
+            get { return "circule"; }
         }
         public int Id { get; private set; }
 
-        public Square(double side, int id)
+        public Circule(double radius, int id)
         {
-            this.Side = side;
+            this.Radius = radius;
             this.Id = id;
         }
     }
