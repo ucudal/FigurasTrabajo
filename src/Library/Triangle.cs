@@ -31,7 +31,7 @@ namespace Ucu.Poo.Shapes
         }
         public int Id { get; private set; }
 
-        public Triangle(double side1, double side2, double side3)
+        public Triangle(double side1, double side2, double side3, int id)
         {
             this.Side1 = side1;
             this.Side2 = side2;
